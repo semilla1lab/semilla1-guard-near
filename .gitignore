@@ -1,0 +1,17 @@
+node_modules/
+**/node_modules/
+contract/target/
+agent/.sandbox-bin/
+.root-key.json
+**/.root-key.json
+*.key
+*key*.json
+.env*
+
+# internal notes (not public)
+LOG.md
+STATUS_INTERNAL.md
+experiments.jsonl
+submit/
+video/X_DRAFT*.md
+video/out/
