@@ -1,0 +1,106 @@
+create vault.semilla1guard-1792872425535.testnet https://testnet.nearblocks.io/txns/9dQvzi6YLycake9putBySGPt2cYdWQyEhxa6izL67P68
+Retrying transaction agent.semilla1guard-1792872425535.testnet:5uk3k1WL6UrjDceT8kb9X5b2bbqHruLSRUEKwb74wZ8o with new nonce.
+create agent.semilla1guard-1792872425535.testnet https://testnet.nearblocks.io/txns/BX9BuMVKW3NYpubczs4XXkRcCKDH4yrWh6kHFSR6sx1m
+Retrying transaction merchant.semilla1guard-1792872425535.testnet:4Ji5Q1envA4pBagh2LcZ5pm6hKgdegnpiLxZgkvqJgAw with new nonce.
+create merchant.semilla1guard-1792872425535.testnet https://testnet.nearblocks.io/txns/ATsKzaiDg6WHWSLEyU45PwJm1eg4fKJL4v3jTyYniut2
+Retrying transaction attacker.semilla1guard-1792872425535.testnet:5B5gsRaQz16RsKjYXLduZESWWtRPPcxkEjBFZFsKzPoe with new nonce.
+create attacker.semilla1guard-1792872425535.testnet https://testnet.nearblocks.io/txns/F9d3f4WUNLT1d8RF41JLdJVSGV484U4LQoNZUFgRdTkH
+deploy wasm https://testnet.nearblocks.io/txns/2bhoPmAeWEC8Smnqrnn29D2vwsV2SXhMKCGcTnrB88Lk
+Retrying transaction vault.semilla1guard-1792872425535.testnet:D6hDW26oPSfUsNCfhQ26tJ8d8jy7QrpsyKFVXNLvYoR4 with new nonce.
+new https://testnet.nearblocks.io/txns/85LBUdhMD98UrV4k6AnR7wdqqzMzC3EzmoEaShx3uAYx
+Retrying transaction vault.semilla1guard-1792872425535.testnet:3a1mmCQduzYYePdTu9DxYnNnEoZ6pHANoeDHYMQcxRBk with new nonce.
+set_agent https://testnet.nearblocks.io/txns/J9NACEkVYK1MnodAjLxgypgX36wazYGmwYEyncL64dr5
+Retrying transaction vault.semilla1guard-1792872425535.testnet:FXqKy2XDyGxxAcqtW6jgQQwt8PJNLish7f2KhRymyG7o with new nonce.
+add_allowed merchant https://testnet.nearblocks.io/txns/GgjNF8cRt8pLy2GaZexFFejLeEG3UuoWcHbrQWeT1HSu
+ALLOW? merchant 0.1 -> returned true https://testnet.nearblocks.io/txns/Ht1aft7ryQMD8SZx5gykTER11ebF9sy3a5xuuTcJHSGs
+Retrying transaction vault.semilla1guard-1792872425535.testnet:HUnhta6pbh42MjWjibvNCoRJBTNyJ2hTeJcWM9dfhhHB with new nonce.
+DENY? attacker receiver 0.1 -> returned false https://testnet.nearblocks.io/txns/ATysBMEH9iCCeBxP2JksqcGt9AghuJFHAmgNQn8Duqj7
+Retrying transaction vault.semilla1guard-1792872425535.testnet:7vXroCdBaxsJ78agKTv599vSCSACzjwmmWwU3Ejatcgk with new nonce.
+DENY? per_tx_cap 1 -> returned false https://testnet.nearblocks.io/txns/BjYmWVuzhDpcUYPdzUY527TU9RFAQH9Vs8Ncv9XVyp1W
+DENY? non-agent signer -> returned false https://testnet.nearblocks.io/txns/8hcMXQANFDnCsMbEyEfzwLHyvXDrwRHxdnP2FzUsbwwe
+Retrying transaction vault.semilla1guard-1792872425535.testnet:39Xgg3yrVqgxZ7ejDsxZmbJJ1mnacpr148DNFiU5vFy3 with new nonce.
+ALLOW? merchant 0.2 -> returned true https://testnet.nearblocks.io/txns/GKxjbdXVBXMDtrpZLDYMGeC1Zg8ExBCV9SvfsA47u5qV
+Retrying transaction vault.semilla1guard-1792872425535.testnet:3Vu1EexiKzhZXStz2AbNwtznmHqy6acWsRd6CmmxeLhW with new nonce.
+ALLOW? merchant 0.2 (0.5 used) -> returned true https://testnet.nearblocks.io/txns/BG5BmZsWLbdJ2PQ4ViwHdq85sby3QJ37fYKKNDD41kk8
+Retrying transaction vault.semilla1guard-1792872425535.testnet:CaEBEw5WnNtsZRJ2HRpoymjvDzuSXv3TW3VRDmvWkUGk with new nonce.
+DENY? daily_cap 0.1 -> returned false https://testnet.nearblocks.io/txns/GCdA74UvrLNienA6bTbRDemnRY5S1zvgwo2MbtAbmTnZ
+Retrying transaction agent.semilla1guard-1792872425535.testnet:FXUxcAfSpwvEbxMYtZyWhpAbRBPb3UersFMPgALb8ysz with new nonce.
+add FC key on agent (agent_spend only) https://testnet.nearblocks.io/txns/GZinKg4sCazWi5CGT9Qre28DymXqtereKcdpV2EQUp1G
+FC key: sendMoney 0.1 to attacker REJECTED RequiresFullAccess
+FC key: call set_policy REJECTED MethodNameMismatch
+FC key: agent_spend (daily cap exhausted -> false) -> OK returned false https://testnet.nearblocks.io/txns/7pdqi5drkidHVjY9gMzQSJcKFRQUXtHZgCNBvHYzwSeD
+{
+ "policy": {
+  "per_tx_cap": "200000000000000000000000",
+  "daily_cap": "500000000000000000000000",
+  "cooldown_ns": 0,
+  "agent": "agent.semilla1guard-1792872425535.testnet"
+ },
+ "remaining": "0",
+ "log": [
+  {
+   "ts_ns": 1792872591219345400,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "100000000000000000000000",
+   "decision": "Allow",
+   "reason": "ok"
+  },
+  {
+   "ts_ns": 1792872609546260500,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "attacker.semilla1guard-1792872425535.testnet",
+   "amount": "100000000000000000000000",
+   "decision": "Deny",
+   "reason": "receiver not allowed"
+  },
+  {
+   "ts_ns": 1792872627710032600,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "1000000000000000000000000",
+   "decision": "Deny",
+   "reason": "per_tx_cap"
+  },
+  {
+   "ts_ns": 1792872638618868200,
+   "actor": "attacker.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "100000000000000000000000",
+   "decision": "Deny",
+   "reason": "not agent"
+  },
+  {
+   "ts_ns": 1792872656859624000,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "200000000000000000000000",
+   "decision": "Allow",
+   "reason": "ok"
+  },
+  {
+   "ts_ns": 1792872675660942000,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "200000000000000000000000",
+   "decision": "Allow",
+   "reason": "ok"
+  },
+  {
+   "ts_ns": 1792872693964077800,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "100000000000000000000000",
+   "decision": "Deny",
+   "reason": "daily_cap"
+  },
+  {
+   "ts_ns": 1792872735230828000,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "100000000000000000000000",
+   "decision": "Deny",
+   "reason": "daily_cap"
+  }
+ ]
+}

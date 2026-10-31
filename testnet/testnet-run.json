@@ -1,0 +1,171 @@
+{
+ "root": "semilla1guard-1792872425535.testnet",
+ "txs": [
+  {
+   "label": "create vault.semilla1guard-1792872425535.testnet",
+   "hash": "9dQvzi6YLycake9putBySGPt2cYdWQyEhxa6izL67P68",
+   "url": "https://testnet.nearblocks.io/txns/9dQvzi6YLycake9putBySGPt2cYdWQyEhxa6izL67P68"
+  },
+  {
+   "label": "create agent.semilla1guard-1792872425535.testnet",
+   "hash": "BX9BuMVKW3NYpubczs4XXkRcCKDH4yrWh6kHFSR6sx1m",
+   "url": "https://testnet.nearblocks.io/txns/BX9BuMVKW3NYpubczs4XXkRcCKDH4yrWh6kHFSR6sx1m"
+  },
+  {
+   "label": "create merchant.semilla1guard-1792872425535.testnet",
+   "hash": "ATsKzaiDg6WHWSLEyU45PwJm1eg4fKJL4v3jTyYniut2",
+   "url": "https://testnet.nearblocks.io/txns/ATsKzaiDg6WHWSLEyU45PwJm1eg4fKJL4v3jTyYniut2"
+  },
+  {
+   "label": "create attacker.semilla1guard-1792872425535.testnet",
+   "hash": "F9d3f4WUNLT1d8RF41JLdJVSGV484U4LQoNZUFgRdTkH",
+   "url": "https://testnet.nearblocks.io/txns/F9d3f4WUNLT1d8RF41JLdJVSGV484U4LQoNZUFgRdTkH"
+  },
+  {
+   "label": "deploy wasm",
+   "hash": "2bhoPmAeWEC8Smnqrnn29D2vwsV2SXhMKCGcTnrB88Lk",
+   "url": "https://testnet.nearblocks.io/txns/2bhoPmAeWEC8Smnqrnn29D2vwsV2SXhMKCGcTnrB88Lk"
+  },
+  {
+   "label": "new",
+   "hash": "85LBUdhMD98UrV4k6AnR7wdqqzMzC3EzmoEaShx3uAYx",
+   "url": "https://testnet.nearblocks.io/txns/85LBUdhMD98UrV4k6AnR7wdqqzMzC3EzmoEaShx3uAYx"
+  },
+  {
+   "label": "set_agent",
+   "hash": "J9NACEkVYK1MnodAjLxgypgX36wazYGmwYEyncL64dr5",
+   "url": "https://testnet.nearblocks.io/txns/J9NACEkVYK1MnodAjLxgypgX36wazYGmwYEyncL64dr5"
+  },
+  {
+   "label": "add_allowed merchant",
+   "hash": "GgjNF8cRt8pLy2GaZexFFejLeEG3UuoWcHbrQWeT1HSu",
+   "url": "https://testnet.nearblocks.io/txns/GgjNF8cRt8pLy2GaZexFFejLeEG3UuoWcHbrQWeT1HSu"
+  },
+  {
+   "label": "ALLOW? merchant 0.1 -> returned true",
+   "hash": "Ht1aft7ryQMD8SZx5gykTER11ebF9sy3a5xuuTcJHSGs",
+   "url": "https://testnet.nearblocks.io/txns/Ht1aft7ryQMD8SZx5gykTER11ebF9sy3a5xuuTcJHSGs"
+  },
+  {
+   "label": "DENY? attacker receiver 0.1 -> returned false",
+   "hash": "ATysBMEH9iCCeBxP2JksqcGt9AghuJFHAmgNQn8Duqj7",
+   "url": "https://testnet.nearblocks.io/txns/ATysBMEH9iCCeBxP2JksqcGt9AghuJFHAmgNQn8Duqj7"
+  },
+  {
+   "label": "DENY? per_tx_cap 1 -> returned false",
+   "hash": "BjYmWVuzhDpcUYPdzUY527TU9RFAQH9Vs8Ncv9XVyp1W",
+   "url": "https://testnet.nearblocks.io/txns/BjYmWVuzhDpcUYPdzUY527TU9RFAQH9Vs8Ncv9XVyp1W"
+  },
+  {
+   "label": "DENY? non-agent signer -> returned false",
+   "hash": "8hcMXQANFDnCsMbEyEfzwLHyvXDrwRHxdnP2FzUsbwwe",
+   "url": "https://testnet.nearblocks.io/txns/8hcMXQANFDnCsMbEyEfzwLHyvXDrwRHxdnP2FzUsbwwe"
+  },
+  {
+   "label": "ALLOW? merchant 0.2 -> returned true",
+   "hash": "GKxjbdXVBXMDtrpZLDYMGeC1Zg8ExBCV9SvfsA47u5qV",
+   "url": "https://testnet.nearblocks.io/txns/GKxjbdXVBXMDtrpZLDYMGeC1Zg8ExBCV9SvfsA47u5qV"
+  },
+  {
+   "label": "ALLOW? merchant 0.2 (0.5 used) -> returned true",
+   "hash": "BG5BmZsWLbdJ2PQ4ViwHdq85sby3QJ37fYKKNDD41kk8",
+   "url": "https://testnet.nearblocks.io/txns/BG5BmZsWLbdJ2PQ4ViwHdq85sby3QJ37fYKKNDD41kk8"
+  },
+  {
+   "label": "DENY? daily_cap 0.1 -> returned false",
+   "hash": "GCdA74UvrLNienA6bTbRDemnRY5S1zvgwo2MbtAbmTnZ",
+   "url": "https://testnet.nearblocks.io/txns/GCdA74UvrLNienA6bTbRDemnRY5S1zvgwo2MbtAbmTnZ"
+  },
+  {
+   "label": "add FC key on agent (agent_spend only)",
+   "hash": "GZinKg4sCazWi5CGT9Qre28DymXqtereKcdpV2EQUp1G",
+   "url": "https://testnet.nearblocks.io/txns/GZinKg4sCazWi5CGT9Qre28DymXqtereKcdpV2EQUp1G"
+  },
+  {
+   "label": "FC key: sendMoney 0.1 to attacker -> REJECTED",
+   "err": "RequiresFullAccess"
+  },
+  {
+   "label": "FC key: call set_policy -> REJECTED",
+   "err": "MethodNameMismatch"
+  },
+  {
+   "label": "FC key: agent_spend (daily cap exhausted -> false) -> OK returned false",
+   "hash": "7pdqi5drkidHVjY9gMzQSJcKFRQUXtHZgCNBvHYzwSeD",
+   "url": "https://testnet.nearblocks.io/txns/7pdqi5drkidHVjY9gMzQSJcKFRQUXtHZgCNBvHYzwSeD"
+  }
+ ],
+ "policy": {
+  "per_tx_cap": "200000000000000000000000",
+  "daily_cap": "500000000000000000000000",
+  "cooldown_ns": 0,
+  "agent": "agent.semilla1guard-1792872425535.testnet"
+ },
+ "remaining": "0",
+ "log": [
+  {
+   "ts_ns": 1792872591219345400,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "100000000000000000000000",
+   "decision": "Allow",
+   "reason": "ok"
+  },
+  {
+   "ts_ns": 1792872609546260500,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "attacker.semilla1guard-1792872425535.testnet",
+   "amount": "100000000000000000000000",
+   "decision": "Deny",
+   "reason": "receiver not allowed"
+  },
+  {
+   "ts_ns": 1792872627710032600,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "1000000000000000000000000",
+   "decision": "Deny",
+   "reason": "per_tx_cap"
+  },
+  {
+   "ts_ns": 1792872638618868200,
+   "actor": "attacker.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "100000000000000000000000",
+   "decision": "Deny",
+   "reason": "not agent"
+  },
+  {
+   "ts_ns": 1792872656859624000,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "200000000000000000000000",
+   "decision": "Allow",
+   "reason": "ok"
+  },
+  {
+   "ts_ns": 1792872675660942000,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "200000000000000000000000",
+   "decision": "Allow",
+   "reason": "ok"
+  },
+  {
+   "ts_ns": 1792872693964077800,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "100000000000000000000000",
+   "decision": "Deny",
+   "reason": "daily_cap"
+  },
+  {
+   "ts_ns": 1792872735230828000,
+   "actor": "agent.semilla1guard-1792872425535.testnet",
+   "receiver": "merchant.semilla1guard-1792872425535.testnet",
+   "amount": "100000000000000000000000",
+   "decision": "Deny",
+   "reason": "daily_cap"
+  }
+ ]
+}

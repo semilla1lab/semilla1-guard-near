@@ -1,0 +1,82 @@
+{
+  "root": "semilla1guard-1792872425535.testnet",
+  "branch": "fix-storage-griefing",
+  "txs": [
+    {
+      "label": "create vault2.semilla1guard-1792872425535.testnet",
+      "hash": "CazWGq8HtZViNR3qCi3ba7Dx5fYZbyr5ocj5f4wc23zK",
+      "url": "https://testnet.nearblocks.io/txns/CazWGq8HtZViNR3qCi3ba7Dx5fYZbyr5ocj5f4wc23zK"
+    },
+    {
+      "label": "deploy fix wasm",
+      "hash": "5DGJZW4yMG9MqzQ8wtypFF2UhcX1X5ZHsEDRwFRuN6HJ",
+      "url": "https://testnet.nearblocks.io/txns/5DGJZW4yMG9MqzQ8wtypFF2UhcX1X5ZHsEDRwFRuN6HJ"
+    },
+    {
+      "label": "new",
+      "hash": "67Nj8fCW9Z8S6RvhfWwdjcNYtXX3DBZnkNcy1ws3t9Es",
+      "url": "https://testnet.nearblocks.io/txns/67Nj8fCW9Z8S6RvhfWwdjcNYtXX3DBZnkNcy1ws3t9Es"
+    },
+    {
+      "label": "set_agent",
+      "hash": "J9cVFfYw2uEfckxHkBrUJhbwLui7VTjkxyF8VEW1Ave",
+      "url": "https://testnet.nearblocks.io/txns/J9cVFfYw2uEfckxHkBrUJhbwLui7VTjkxyF8VEW1Ave"
+    },
+    {
+      "label": "add_allowed merchant",
+      "hash": "GYU2eAybU5XLcznEqNkzDHmiNLRDCX1iYteK5t87iihX",
+      "url": "https://testnet.nearblocks.io/txns/GYU2eAybU5XLcznEqNkzDHmiNLRDCX1iYteK5t87iihX"
+    },
+    {
+      "label": "ALLOW? agent->merchant 0.1 -> returned true",
+      "hash": "H3At5VeosMwifJAz7TM293YoTHhXxP4SLeLuUFhD76CK",
+      "url": "https://testnet.nearblocks.io/txns/H3At5VeosMwifJAz7TM293YoTHhXxP4SLeLuUFhD76CK",
+      "events": [
+        "EVENT_JSON:{\"standard\":\"semilla1_guard\",\"version\":\"1.0.0\",\"event\":\"allow\",\"data\":[{\"actor\":\"agent.semilla1guard-1792872425535.testnet\",\"receiver\":\"merchant.semilla1guard-1792872425535.testnet\",\"amount\":\"100000000000000000000000\",\"reason\":\"ok\"}]}"
+      ]
+    },
+    {
+      "label": "DENY? agent->attacker 0.1 -> returned false",
+      "hash": "2dNu54FyeTwCkuhqPm4QGQfsuKYT6oCYaNVSqEPdQM1m",
+      "url": "https://testnet.nearblocks.io/txns/2dNu54FyeTwCkuhqPm4QGQfsuKYT6oCYaNVSqEPdQM1m",
+      "events": [
+        "EVENT_JSON:{\"standard\":\"semilla1_guard\",\"version\":\"1.0.0\",\"event\":\"deny\",\"data\":[{\"actor\":\"agent.semilla1guard-1792872425535.testnet\",\"receiver\":\"attacker.semilla1guard-1792872425535.testnet\",\"amount\":\"100000000000000000000000\",\"reason\":\"receiver not allowed\"}]}"
+      ]
+    },
+    {
+      "label": "DENY? non-agent signer (griefing attempt) -> returned false",
+      "hash": "CzHsVkExfWzaBSxuSHz5dEsgqtfVP7XbWAT8TPNkTAXv",
+      "url": "https://testnet.nearblocks.io/txns/CzHsVkExfWzaBSxuSHz5dEsgqtfVP7XbWAT8TPNkTAXv",
+      "events": [
+        "EVENT_JSON:{\"standard\":\"semilla1_guard\",\"version\":\"1.0.0\",\"event\":\"deny\",\"data\":[{\"actor\":\"attacker.semilla1guard-1792872425535.testnet\",\"receiver\":\"merchant.semilla1guard-1792872425535.testnet\",\"amount\":\"100000000000000000000000\",\"reason\":\"not agent\"}]}"
+      ]
+    },
+    {
+      "label": "DENY? non-agent signer (griefing attempt 2) -> returned false",
+      "hash": "2yx2TVwsyRZ35hH4ifhFPRvh9AVYgEbXKWzWs1CEfscb",
+      "url": "https://testnet.nearblocks.io/txns/2yx2TVwsyRZ35hH4ifhFPRvh9AVYgEbXKWzWs1CEfscb",
+      "events": [
+        "EVENT_JSON:{\"standard\":\"semilla1_guard\",\"version\":\"1.0.0\",\"event\":\"deny\",\"data\":[{\"actor\":\"attacker.semilla1guard-1792872425535.testnet\",\"receiver\":\"merchant.semilla1guard-1792872425535.testnet\",\"amount\":\"100000000000000000000000\",\"reason\":\"not agent\"}]}"
+      ]
+    }
+  ],
+  "log": [
+    {
+      "ts_ns": 1793407525122185000,
+      "actor": "agent.semilla1guard-1792872425535.testnet",
+      "receiver": "merchant.semilla1guard-1792872425535.testnet",
+      "amount": "100000000000000000000000",
+      "decision": "Allow",
+      "reason": "ok"
+    },
+    {
+      "ts_ns": 1793407544029963000,
+      "actor": "agent.semilla1guard-1792872425535.testnet",
+      "receiver": "attacker.semilla1guard-1792872425535.testnet",
+      "amount": "100000000000000000000000",
+      "decision": "Deny",
+      "reason": "receiver not allowed"
+    }
+  ],
+  "remaining": "400000000000000000000000"
+}
