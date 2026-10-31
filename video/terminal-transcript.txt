@@ -1,0 +1,85 @@
+== Semilla1 Guard vault: vault.semilla1guard-1792872425535.testnet ==
+-- policy (yocto: 0.2 NEAR per tx, 0.5 NEAR per day)
+{
+ "per_tx_cap": "200000000000000000000000",
+ "daily_cap": "500000000000000000000000",
+ "cooldown_ns": 0,
+ "agent": "agent.semilla1guard-1792872425535.testnet"
+}
+-- allowlist
+[
+ "merchant.semilla1guard-1792872425535.testnet"
+]
+-- remaining today
+"500000000000000000000000"
+-- on-chain audit log
+[
+ {
+  "ts_ns": 1792872591219345329,
+  "actor": "agent.semilla1guard-1792872425535.testnet",
+  "receiver": "merchant.semilla1guard-1792872425535.testnet",
+  "amount": "100000000000000000000000",
+  "decision": "Allow",
+  "reason": "ok"
+ },
+ {
+  "ts_ns": 1792872609546260443,
+  "actor": "agent.semilla1guard-1792872425535.testnet",
+  "receiver": "attacker.semilla1guard-1792872425535.testnet",
+  "amount": "100000000000000000000000",
+  "decision": "Deny",
+  "reason": "receiver not allowed"
+ },
+ {
+  "ts_ns": 1792872627710032540,
+  "actor": "agent.semilla1guard-1792872425535.testnet",
+  "receiver": "merchant.semilla1guard-1792872425535.testnet",
+  "amount": "1000000000000000000000000",
+  "decision": "Deny",
+  "reason": "per_tx_cap"
+ },
+ {
+  "ts_ns": 1792872638618868325,
+  "actor": "attacker.semilla1guard-1792872425535.testnet",
+  "receiver": "merchant.semilla1guard-1792872425535.testnet",
+  "amount": "100000000000000000000000",
+  "decision": "Deny",
+  "reason": "not agent"
+ },
+ {
+  "ts_ns": 1792872656859623898,
+  "actor": "agent.semilla1guard-1792872425535.testnet",
+  "receiver": "merchant.semilla1guard-1792872425535.testnet",
+  "amount": "200000000000000000000000",
+  "decision": "Allow",
+  "reason": "ok"
+ },
+ {
+  "ts_ns": 1792872675660942025,
+  "actor": "agent.semilla1guard-1792872425535.testnet",
+  "receiver": "merchant.semilla1guard-1792872425535.testnet",
+  "amount": "200000000000000000000000",
+  "decision": "Allow",
+  "reason": "ok"
+ },
+ {
+  "ts_ns": 1792872693964077731,
+  "actor": "agent.semilla1guard-1792872425535.testnet",
+  "receiver": "merchant.semilla1guard-1792872425535.testnet",
+  "amount": "100000000000000000000000",
+  "decision": "Deny",
+  "reason": "daily_cap"
+ },
+ {
+  "ts_ns": 1792872735230828151,
+  "actor": "agent.semilla1guard-1792872425535.testnet",
+  "receiver": "merchant.semilla1guard-1792872425535.testnet",
+  "amount": "100000000000000000000000",
+  "decision": "Deny",
+  "reason": "daily_cap"
+ }
+]
+add FC key on agent (agent_spend only) https://testnet.nearblocks.io/txns/GZinKg4sCazWi5CGT9Qre28DymXqtereKcdpV2EQUp1G
+FC key: sendMoney 0.1 to attacker REJECTED RequiresFullAccess
+FC key: call set_policy REJECTED MethodNameMismatch
+FC key: agent_spend (daily cap exhausted -> false) -> OK returned false https://testnet.nearblocks.io/txns/7pdqi5drkidHVjY9gMzQSJcKFRQUXtHZgCNBvHYzwSeD
