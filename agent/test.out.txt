@@ -1,0 +1,59 @@
+TAP version 13
+# Subtest: Semilla1 Guard: 8 guarantees on sandbox
+    # Subtest: 1 ALLOW within policy moves funds
+    ok 1 - 1 ALLOW within policy moves funds
+      ---
+      duration_ms: 2436.691533
+      ...
+    # Subtest: 2 DENY over per-tx cap
+    ok 2 - 2 DENY over per-tx cap
+      ---
+      duration_ms: 1816.77515
+      ...
+    # Subtest: 3 DENY unlisted receiver
+    ok 3 - 3 DENY unlisted receiver
+      ---
+      duration_ms: 1822.168441
+      ...
+    # Subtest: 4 DENY non-agent caller
+    ok 4 - 4 DENY non-agent caller
+      ---
+      duration_ms: 1819.985904
+      ...
+    # Subtest: 5 DENY over rolling daily cap
+    ok 5 - 5 DENY over rolling daily cap
+      ---
+      duration_ms: 6680.256581
+      ...
+    # Subtest: 6 DENY during cooldown
+    ok 6 - 6 DENY during cooldown
+      ---
+      duration_ms: 5463.202315
+      ...
+# Receipt: 7R3vscsiW3BV3MYtSEGVjXaPXFYyaBz4vcGz7533qh5a
+# Receipt: H1kGL8Wy1FftJcys2vStSakRSSL9HM8UUrymFh4wYMwv
+# Receipt: 9dMc9EvrCHU9n8QnGA2wDFvVPsnhEArMGwZsoBi5U5v8
+    # Subtest: 7 only owner can change policy / withdraw
+    ok 7 - 7 only owner can change policy / withdraw
+      ---
+      duration_ms: 5465.964768
+      ...
+    # Subtest: 8 every decision is in the audit log (DENY not reverted)
+    ok 8 - 8 every decision is in the audit log (DENY not reverted)
+      ---
+      duration_ms: 4.352251
+      ...
+    1..8
+ok 1 - Semilla1 Guard: 8 guarantees on sandbox
+  ---
+  duration_ms: 40816.682348
+  ...
+1..1
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 41156.817174

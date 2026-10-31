@@ -1,0 +1,23 @@
+{
+  "name": "semilla1-guard-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:wasm": "../contract/build-wasm.sh",
+    "demo": "node demo.mjs",
+    "test": "node --test guard.sandbox.test.mjs",
+    "sandbox:fix": "bash fetch-sandbox.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "near-workspaces": "^5.0.0"
+  },
+  "devDependencies": {
+    "binaryen": "^132.0.0"
+  },
+  "private": true
+}

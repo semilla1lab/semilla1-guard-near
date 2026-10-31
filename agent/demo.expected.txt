@@ -1,0 +1,20 @@
+Vault dev-53998-12960.test.near | policy {
+  per_tx_cap: '1000000000000000000000000',
+  daily_cap: '2500000000000000000000000',
+  cooldown_ns: 0,
+  agent: 'agent.test.near'
+}
+ALLOW | allowed merchant, 0.5 NEAR
+DENY  | unlisted receiver (attacker), 0.5 NEAR
+DENY  | over per-tx cap, 5 NEAR
+DENY  | non-agent caller tries to spend
+ALLOW | drain loop #1 1 NEAR
+ALLOW | drain loop #2 1 NEAR (2.5 used)
+DENY  | drain loop #3 0.5 NEAR (exceeds 2.5 daily cap)
+remaining today: 0 NEAR
+  log: Allow agent -> merchant 0.5 NEAR (ok)
+  log: Deny  agent -> attacker 0.5 NEAR (receiver not allowed)
+  log: Deny  agent -> merchant 5 NEAR (per_tx_cap)
+  log: Allow agent -> merchant 1 NEAR (ok)
+  log: Allow agent -> merchant 1 NEAR (ok)
+  log: Deny  agent -> merchant 0.5 NEAR (daily_cap)
