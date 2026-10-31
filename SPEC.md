@@ -132,7 +132,7 @@ SKIP: frontend dApp, token (FT), multi-owner governance.
 - **Nov 14 before 17:59 CDMX:** make repo public, submit form, publish X demo post.
 
 ## 10. Scaffold state (2026-10-24)
-- `contract/` near-sdk 5.29.1, Guard fully implemented (not just stubs). `cargo test`: **8/8 pass**.
+- `contract/` near-sdk 5.29.1, Guard fully implemented (not just stubs). `cargo test`: **10/10 pass** (v1.1).
 - Design fix found while building: a NEAR panic reverts state, so DENY must **log and return
   false** (no panic) or the audit trail of rejected attempts would vanish. Implemented.
 - Known TODOs: `window` is a plain Vec (fine for demo; bound its size / use per-bucket sums
