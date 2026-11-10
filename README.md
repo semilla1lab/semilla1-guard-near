@@ -134,3 +134,8 @@ MIT, see `LICENSE`.
 - `SPEC.md` — full design and build plan
 
 Built at NEAR HACKATHON by Semilla1 Lab.
+
+## Disclosure (Q-015) — other project by the same team
+The same team also submitted **Semilla1 NEAR Thesis** (track `thesis`): https://github.com/semilla1lab/semilla1-near-thesis — a re-runnable investment thesis on NEAR Intents fees vs L1 activity. The two projects are independent: different problem, different code, no shared files.
+
+
